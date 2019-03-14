@@ -1,5 +1,7 @@
 #include <Wire.h>
 #include "Balance.h"
+#include <Balboa32U4.h>
+
 
 int32_t gYZero;
 int32_t angle; // millidegrees
@@ -197,7 +199,7 @@ void balanceUpdate()
   balanceUpdateSensors();
   balanceDoDriveTicks();
 
-  if (imu.a.x < 0)
+  if (imu.a.x < 5000)
   {
     lyingDown();
     isBalancingStatus = false;

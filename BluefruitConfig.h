@@ -8,4 +8,3 @@
 
 #define BLUEFRUIT_HWSERIAL_NAME      Serial1
 #define BLUEFRUIT_UART_MODE_PIN        -1    // Set to -1 if unused  was 12
-
