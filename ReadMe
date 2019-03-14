@@ -1,2 +1,5 @@
-This repository merges example code from Pololu and Adafruit to create a balancing two-wheeled robot that is controllable with a smart phone
+This repository merges example code from Pololu and Adafruit to create a balancing 
+two-wheeled robot that is controllable with a smart phone
 See https://www.youtube.com/watch?v=v6w-qVblXc0 for video of the completed project
+Note: The Pololu board uses an interrupt common to the serial port.  I provide a 
+modified serial library which remaps the interrupt so that the compiler is happy.
